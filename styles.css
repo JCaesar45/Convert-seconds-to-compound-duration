@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* Main section styles */
+main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input section styles */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#secondsInput {
+  padding: 12px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: none;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+#secondsInput:focus {
+  box-shadow: 0 0 10px #74ebd5;
+}
+
+#convertBtn {
+  padding: 12px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#convertBtn:hover {
+  background: linear-gradient(135deg, #6bd4c1, #9fa8e5);
+  transform: translateY(-2px);
+}
+
+/* Result display styles */
+.result-section {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.result-display {
+  font-size: 1.5em;
+  min-height: 50px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.2);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  opacity: 0.8;
+}
